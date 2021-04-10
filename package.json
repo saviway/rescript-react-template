@@ -1,0 +1,28 @@
+{
+  "name": "rescript-project-template",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "bsb -make-world",
+    "clean": "bsb -clean-world",
+    "start": "bsb -make-world -w",
+    "commitlint": "node ./node_modules/commitlint/cli.js",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "rescript"
+  ],
+  "scarfSettings": {
+    "enabled": false
+  },
+  "author": "Ivan Savi",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/config-conventional": "^12.1.1",
+    "bs-platform": "*",
+    "commitlint": "^12.1.1",
+    "husky": "^6.0.0"
+  },
+  "dependencies": {
+    "@rescript/react": "^0.10.1"
+  }
+}
