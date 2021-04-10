@@ -6,3 +6,5 @@
 .vscode
 .vs_code
 .idea
+/src/**/*.bs.js
+/build

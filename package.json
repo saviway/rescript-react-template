@@ -2,9 +2,11 @@
   "name": "rescript-project-template",
   "version": "0.0.1",
   "scripts": {
-    "build": "bsb -make-world",
+    "build": "snowpack build",
+    "build_bsb": "bsb -make-world",
     "clean": "bsb -clean-world",
-    "start": "bsb -make-world -w",
+    "start_bsb": "bsb -make-world -w",
+    "start": "snowpack dev",
     "commitlint": "node ./node_modules/commitlint/cli.js",
     "prepare": "husky install"
   },
@@ -18,9 +20,14 @@
   "license": "MIT",
   "devDependencies": {
     "@commitlint/config-conventional": "^12.1.1",
+    "@snowpack/plugin-dotenv": "^2.1.0",
+    "@snowpack/plugin-react-refresh": "^2.4.2",
+    "@snowpack/plugin-run-script": "^2.3.0",
+    "@snowpack/plugin-webpack": "^2.3.1",
     "bs-platform": "*",
     "commitlint": "^12.1.1",
-    "husky": "^6.0.0"
+    "husky": "^6.0.0",
+    "snowpack": "^3.2.2"
   },
   "dependencies": {
     "@rescript/react": "^0.10.1",
